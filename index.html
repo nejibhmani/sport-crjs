@@ -3,116 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport Scolaire CRJS</title>
+    <title>Système de Téléchargement CRJS - Gestion des Rapports Sportifs</title>
+    <meta name="description" content="Plateforme de téléchargement sécurisée pour les rapports sportifs CRJS. Téléchargez vos fichiers PDF, PNG, Excel et Word vers Google Drive automatiquement.">
+    <meta name="keywords" content="CRJS, rapports sportifs, téléchargement fichiers, Google Drive, gestion documents, sport">
+    <meta name="author" content="Nejib Hmani">
+    
+    <!-- Balises Open Graph pour les réseaux sociaux -->
+    <meta property="og:title" content="Système de Téléchargement CRJS">
+    <meta property="og:description" content="Plateforme de gestion des rapports sportifs CRJS">
+    <meta property="og:url" content="https://nejibhmani.github.io/sport-crjs/">
+    <meta property="og:type" content="website">
+    
+    <!-- Balises Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Système de Téléchargement CRJS">
+    <meta name="twitter:description" content="Plateforme de gestion des rapports sportifs CRJS">
+    
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Système de Téléchargement CRJS",
+      "description": "Plateforme de téléchargement sécurisée pour les rapports sportifs",
+      "url": "https://nejibhmani.github.io/sport-crjs/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Any",
+      "author": {
+        "@type": "Person",
+        "name": "Nejib Hmani"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
     <style>
+        /* VOTRE CSS EXISTANT - GARDEZ TOUT VOTRE CSS ACTUEL ICI */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', system-ui, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #2E86AB;
+            --secondary: #A23B72;
+            --accent: #F18F01;
+            --dark: #1A1A2E;
+            --light: #F8F9FA;
+            --success: #2ECC71;
+            --warning: #F39C12;
+            --danger: #E74C3C;
         }
         
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: var(--light);
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
             padding: 20px;
         }
         
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            border-radius: 24px;
-            padding: 40px;
-            text-align: center;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            max-width: 400px;
-            width: 100%;
-        }
-        
-        .logo {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        h1 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        
-        .subtitle {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            margin-bottom: 30px;
-            line-height: 1.5;
-        }
-        
-        .btn {
-            display: block;
-            background: white;
-            color: #667eea;
-            text-decoration: none;
-            padding: 16px 32px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-            margin: 15px 0;
-        }
-        
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin: 25px 0;
-        }
-        
-        .feature {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 15px;
-            border-radius: 16px;
-            font-size: 0.9rem;
-            transition: transform 0.3s ease;
-        }
-        
-        .feature:hover {
-            transform: scale(1.05);
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .pulse {
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
+        /* ... CONTINUEZ AVEC TOUT LE RESTE DE VOTRE CSS ... */
     </style>
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head><body>
     <div class="card pulse">
         <div class="logo">🏃‍♂️</div>
         <h1>Sport Scolaire CRJS</h1>
