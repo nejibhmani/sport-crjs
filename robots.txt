@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nejibhmani.github.io/sport-crjs/sitemap.xml
